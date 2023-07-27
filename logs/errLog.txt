@@ -1,0 +1,25 @@
+20230715	09:45:38	7236af3c-00ba-4ce2-a8e9-c3adfee13f04	Error: Not allowed by CORS
+20230715	09:45:38	50a76bdf-8e68-429d-8d01-402c5105498d	Error: Not allowed by CORS
+20230715	09:48:09	ad028f68-18d4-4fcc-b9fc-1fa38e6cd3d2	ReferenceError: path is not defined
+20230715	09:48:11	0d021e22-eba6-49ec-9aa9-071683467c4c	ReferenceError: path is not defined
+20230715	09:48:30	247fb2f8-1cf5-48fa-9d1d-572bc259e9e6	ReferenceError: path is not defined
+20230715	09:50:59	a6cf25e6-5ffe-4b6f-912c-a626fcfb6342	ReferenceError: path is not defined
+20230715	09:51:10	69aa096c-4ec1-4f3e-a25a-f0d7c82d6fdf	ReferenceError: path is not defined
+20230715	11:19:21	ad13c487-2cf9-453f-bacd-ead91d2e84db	ReferenceError: Cannot access 'authHeader' before initialization
+20230715	12:59:14	abeffa8c-cd8b-450d-8dc7-7a798a5be2b9	Error: Cannot set headers after they are sent to the client
+20230715	12:59:15	49a476ff-0102-49e4-8c5a-5c458cf0c0b6	Error: Cannot set headers after they are sent to the client
+20230715	20:31:07	1620f9c1-3f5c-4fdd-a335-0b6b32b19804	TypeError: console.lol is not a function
+20230715	20:32:21	1d3704b5-e749-489a-bc69-7414940c007e	Error: Cannot set headers after they are sent to the client
+20230715	20:33:21	a2bbd658-d61a-433e-b11c-f9cdf23ef4dc	Error: Cannot set headers after they are sent to the client
+20230715	21:47:49	4b5223c7-4065-4e39-9f46-c56cf152b98c	SyntaxError: Unexpected token } in JSON at position 84
+20230715	21:48:07	f783b0ee-a1f2-4c52-8b28-aaf989ed62a7	SyntaxError: Unexpected token } in JSON at position 84
+20230721	01:24:36	3ecbdb27-11ea-4f37-b20c-3efa3cebccbb	ReferenceError: cors_whitelist is not defined
+20230721	01:24:58	fd92d20a-9c3c-4de8-88aa-d8bea1fe6bc9	ReferenceError: cors_whitelist is not defined
+20230721	01:25:52	98afda9a-967f-406e-a2ed-05b88c00e4fb	ReferenceError: cors_whitelist is not defined
+20230721	01:30:31	e6f94593-3d42-43b2-b2fe-5f67b3926843	ReferenceError: cors_whitelist is not defined
+20230721	01:31:15	059f8960-6236-4e7c-95e2-d4eb03fc2b67	ReferenceError: cors_whitelist is not defined
+20230721	01:31:45	835bb232-c1c3-4e24-9a5c-d8ac30cb9869	ReferenceError: cors_whitelist is not defined
+20230721	01:31:49	f0bd2d36-5f14-448f-96cf-702a0f36765f	ReferenceError: cors_whitelist is not defined
+20230721	01:31:49	05e50a90-25c7-411c-be96-54223f6ebfaf	ReferenceError: cors_whitelist is not defined
+20230727	10:14:48	93867610-0fbf-4587-a2ee-dc63f3291e37	SyntaxError: Unexpected token } in JSON at position 55
+20230727	11:05:16	3b3d6ade-71e3-499e-b899-98df211a3ac4	SyntaxError: Unexpected token } in JSON at position 147

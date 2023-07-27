@@ -13,9 +13,12 @@ const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials');
 const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
+const rateLimit = require('./middleware/rateLimiter');
+const { connectRedis }= require('./config/redisConn');
 
 // Connect to MongoDB
 connectDB();
+connectRedis();
 
 // custom Logger middleware 
 app.use(logger);
@@ -35,10 +38,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 // routes
-app.get('/', (req, res) => {
-    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); 
+app.get('/', async (req, res) => {
+    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED' }); 
 });
-
+app.use(rateLimit);
 app.use('/auth', require('./routes/auth'));
 app.use('/register', require('./routes/register'));
 app.use('/refresh', require('./routes/refresh')); // issues new access token once expired

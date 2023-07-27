@@ -23,3 +23,5 @@
 20230721	01:31:49	05e50a90-25c7-411c-be96-54223f6ebfaf	ReferenceError: cors_whitelist is not defined
 20230727	10:14:48	93867610-0fbf-4587-a2ee-dc63f3291e37	SyntaxError: Unexpected token } in JSON at position 55
 20230727	11:05:16	3b3d6ade-71e3-499e-b899-98df211a3ac4	SyntaxError: Unexpected token } in JSON at position 147
+20230727	14:38:02	dfb083b3-d250-42e8-8ba2-a56e0dff54c6	ReferenceError: message is not defined
+20230727	14:38:02	fdd4c481-2251-41c4-b0f4-f152cbbe7129	ReferenceError: message is not defined

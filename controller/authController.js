@@ -8,8 +8,8 @@ const handleLogin = async (req, res) => {
     if (!username || !password) return res.status(400).json({ 'message': 'Username and password are required.' });
 
     // validate input
-    if (!validateUsername(username)) return res.status(400).json({ 'message': 'Incorrect username format.' });
-    if (!validatePassword(password)) return res.status(400).json({ 'message': 'Incorrect password format.' });
+    // if (!validateUsername(username)) return res.status(400).json({ 'message': 'Incorrect username format.' });
+    // if (!validatePassword(password)) return res.status(400).json({ 'message': 'Incorrect password format.' });
 
     const foundUser = await User.findOne({ username: username }).exec();
     if (!foundUser) return res.status(401).json({ 'message': 'Login failed.' });

@@ -8,8 +8,8 @@ router.route('/send')
 router.route('/verify')
   .post(otpController.verifyOTP);
 
-router.route('/')
-  .delete(otpController.deleteOTP);
+// router.route('/')
+//   .delete(otpController.deleteOTP);
 
 
 module.exports = router;

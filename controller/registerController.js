@@ -1,7 +1,7 @@
 const User = require('../model/User');
 const bcrypt = require('bcrypt');
 const authController = require('./authController');
-const otpController = require('./otpController');
+const otpController = require('./otpController_old');
 const { validateUsername, validatePassword, validateEmail } = require('../middleware/validateInput');
 
 const handleNewUser = async (req, res) => {

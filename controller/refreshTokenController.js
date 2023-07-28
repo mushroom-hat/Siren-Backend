@@ -9,7 +9,7 @@ const handleRefreshToken = async (req, res) => {
 
     // find user with refresh token
     const foundUser = await User.findOne({refreshToken}).exec();
-    if (!foundUser) return res.sendStatus(403);
+    if (!foundUser) return res.sendStatus(403); 
 
     // verify refresh token
     jwt.verify(

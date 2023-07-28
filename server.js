@@ -41,11 +41,11 @@ app.use(cookieParser());
 app.get('/', async (req, res) => {
     res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED' }); 
 });
-app.use(rateLimit);
-app.use('/auth', require('./routes/auth'));
-app.use('/register', require('./routes/register'));
+
 app.use('/refresh', require('./routes/refresh')); // issues new access token once expired
 app.use('/logout', require('./routes/logout'));
+app.use('/auth', require('./routes/auth'));
+app.use('/register', require('./routes/register'));
 app.use('/otp', require('./routes/api/otp'));
 
 app.use(verifyJWT);

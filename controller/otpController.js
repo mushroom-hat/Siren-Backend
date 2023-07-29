@@ -14,7 +14,7 @@ const sendOTP = async (req, res) => {
         
         // save pin to redis
         await redisClient.setEx(email, duration, generatedOTP);
-        
+
         // send email
         const mailOptions = {
             from: process.env.AUTH_EMAIL,

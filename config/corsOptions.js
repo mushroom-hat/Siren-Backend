@@ -3,7 +3,9 @@ const allowedOrigins = require('./allowedOrigins');
 const corsOptions = {
     // if origin does not match the whitelist, CORS will fail
     origin: (origin, callback) => {
-        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+
+        // check if "postman" in allowOrigins, if so, bypass CORS
+        if (allowedOrigins.indexOf(origin) !== -1 || allowedOrigins.indexOf("postman") !== -1) {
             callback(null, true);
         }
         else {

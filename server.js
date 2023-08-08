@@ -15,6 +15,7 @@ const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
 const rateLimit = require('./middleware/rateLimiter');
 const { connectRedis }= require('./config/redisConn');
+const disableCorsForRoute = require('./middleware/disableCorsForRoute');
 
 // Connect to MongoDB
 connectDB();
@@ -22,6 +23,9 @@ connectRedis();
 
 // custom Logger middleware 
 app.use(logger);
+app.get('/containerHealthCheck', disableCorsForRoute, (req, res) => {
+    res.status(200).send('Container Health Check Success.');
+});
 
 // CORS middleware
 app.use(credentials);
@@ -56,6 +60,7 @@ app.use('/users', require('./routes/api/users'));
 app.use('/files', require('./routes/api/s3files'));
 
 
+
 // redirect to 404.html if status code is 404
 app.all('*', (req, res) => {
     res.status(404);
@@ -71,6 +76,7 @@ app.all('*', (req, res) => {
 
 // custom middleware error handler
 app.use(errorHandler)
+
 
 // only listen for API requests if mongodb successfully connected
 mongoose.connection.once('open', () => {

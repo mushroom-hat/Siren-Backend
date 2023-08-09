@@ -1,5 +1,4 @@
-"# Siren-Backend" 
-
+### Express
 Express is a web application framework for Node.js. It is used to build Siren's API server. `server.js` is the entry point to the server application which starts a server on port 5000 for connections. 
 
 
@@ -13,7 +12,7 @@ Siren minimally requires the following infrastructure to be available:
 
 After these have been set up, set the environment variables according to the table below, typically in a .env file:
 
-#### Server
+#### Server Environment Variables
 
 |Environment Variable|Required|Description/Value|
 |:---:|:---:|:---|

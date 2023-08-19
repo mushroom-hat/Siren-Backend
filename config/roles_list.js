@@ -1,6 +1,6 @@
 const ROLES_LIST = {
     Admin : 1,
-    Alumni : 2,
+    TestUser : 2,
     User: 3
 }
 

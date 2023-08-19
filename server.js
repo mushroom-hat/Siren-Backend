@@ -58,7 +58,7 @@ app.use(verifyJWT);
 app.use('/employees', require('./routes/api/employees'));
 app.use('/users', require('./routes/api/users'));
 app.use('/files', require('./routes/api/s3files'));
-
+app.use('/search', require('./routes/api/search'));
 
 
 // redirect to 404.html if status code is 404

@@ -44,5 +44,6 @@ To deploy:
    ```
 2) Tag & Upload image to ECR
 3) Apply the Terraform Infrastructure [here](https://github.com/mushroom-hat/Siren-Terraform)
+4) Add LB domain name as CNAME record in DNS registrar.
    
 *Change image name in ecs/task_definitions.tf module if needed *
